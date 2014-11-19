@@ -1311,7 +1311,7 @@ if (typeof jQuery === 'undefined') {
                 var $f = map[field];
                 if ($f.data('bv.messages')
                       .find('.help-block[data-bv-validator][data-bv-for="' + field + '"]')
-                      .filter('[data-bv-result="' + this.STATUS_INVALID +'"]')
+                      .filter('[data-bv-result="' + this.STATUS_INVALID +'"], [data-bv-result="' + this.STATUS_NOT_VALIDATED +'"]')
                       .length > 0)
                 {
                     return false;
